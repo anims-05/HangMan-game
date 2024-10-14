@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <style>
+        .btn{
+            background-color: rgb(35, 83, 102);
+            color: white;
+        }
+        .btn:hover{
+            background-color: rgb(65, 127, 151);
+        }
+        
+    </style>
+    <title>Hang-Man</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Hang-Man</h1>
+        <div class="float-end">Wrong Guesses : <span id="mistakes">0</span>
+            / <span id="maxwrong"></span>
+        </div>
+        <div class="text-center">
+            <img src="0.jpg" alt="" id="hangman-pic">
+            <p>Guess the Programming Language :</p>
+            <p id="wordspotlight"> Word to be guessed!
+            </p>
+            <div id="keyboard">
+            </div>
+            <button class="btn btn-info" onclick=reset()>Reset</button>
+        </div>
+    </div>
+</body>
+<audio src="sound 2.wav" class="happyclick" id="happyclick"></audio>
+<audio src="sound1.wav" class="sadclick" id="sadclick"></audio>
+<audio src="sound4.wav" class="won" id="won"></audio>
+<audio src="sound3.wav" class="lost" id="lost"></audio>
+<script src="main.js"></script>
+</html>
